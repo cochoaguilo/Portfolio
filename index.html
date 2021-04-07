@@ -6,14 +6,29 @@
     <title>Home</title>
     <!-- CSS only -->
     <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="Styles/main.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body>
     <div id="fondo">
+    <header>
+        <nav>
+            <div class="lang-menu">
+                <div class="selected-lang">
+                    Español
+                </div>
+                <ul>
+                    <li>
+                       <a>English</a> 
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <main>
     <section id="bio" class="section">
         <img src="Images/book-solid.svg" alt="Biografía" id="icon-bio" class="iconos">
-        <div class="texto">
+        <div class="texto" >
             <h1 class="headers">Biografía</h1>
             <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas beatae sint distinctio et velit asperiores aspernatur porro commodi architecto nisi perferendis soluta expedita quam, fuga optio tenetur quae, quibusdam officiis?</p>
         </div>
@@ -41,6 +56,17 @@
     </section>
     </main>
 </div>
+<script>
+    function loadPage(dom, href){
+    document.getElementById(dom).addEventListener("click", ()=>{
+        window.location.href = href;
+    })
+}
+loadPage('bio', 'Biografia.html');
+loadPage('audiovisual', 'Audiovisual.html');
+loadPage('sonido', 'Sonido.html');
+loadPage('web', 'Web.html');
+ </script>
 </body>
 
 </html>
