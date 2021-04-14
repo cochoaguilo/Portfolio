@@ -19,3 +19,4 @@ function animateFlecha(parrafo, flecha) {
     
     flecha.classList.toggle('flecha-alreves')
 }
+

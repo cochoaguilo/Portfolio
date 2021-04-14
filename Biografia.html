@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,31 +9,110 @@
     <title>Bio</title>
 </head>
 <body>
-    <header>
+    <div id="fondo"></div>
         <nav>
-            <div class=""></div>
+            <a href="index.html" ><button><i class="fa fa-home" id="button-home"></i></button></a>
         </nav>
-    </header>
-    <div id="fondo">
     <main>
-        <a href="index.html"><button><i class="fa fa-home"></i></button></a>
+        
     <section class="section">
-        <h1>1991 - 2012</h1>
-        <p class="hidden left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, voluptates sint laudantium aspernatur ipsam doloremque error, sit esse tempora cum soluta quidem eum. Harum perferendis aut ullam aspernatur, sequi deleniti!</p>
+        <h1 class="años">1991 - 2012
+            <div class="hidden circulo">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </h1>
+        <div class="barra"></div>
+        <p class="hidden left text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, voluptates sint laudantium aspernatur ipsam doloremque error, sit esse tempora cum soluta quidem eum. Harum perferendis aut ullam aspernatur, sequi deleniti!</p>
     </section>
     <section class="section">
-        <h1>2013-2016</h1>
-        <p class="hidden right">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, sequi! Laborum atque alias magnam totam officia earum deserunt, amet quibusdam quia, magni ipsa iure deleniti facilis facere laboriosam, eius repellendus?</p>
+        <h1 class="años">2013-2016
+            <div class="hidden circulo right-circulo">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </h1>
+        <div class="barra right"></div>
+        <p class="hidden right text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, sequi! Laborum atque alias magnam totam officia earum deserunt, amet quibusdam quia, magni ipsa iure deleniti facilis facere laboriosam, eius repellendus?</p>
     </section>
     <section class="section">
-        <h1>2017-2020</h1>
-        <p class="hidden left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo enim aliquid dolore exercitationem at corporis quaerat et molestias dolor repudiandae aspernatur doloremque nulla, aperiam iste est inventore sit odit.</p>
+        <h1 class="años">2017-2020
+            <div class="hidden circulo">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </h1>
+        <div class="barra"></div>
+        <p class="hidden left text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illo enim aliquid dolore exercitationem at corporis quaerat et molestias dolor repudiandae aspernatur doloremque nulla, aperiam iste est inventore sit odit.</p>
     </section>
     <section class="section">
-        <h1>Actualidad</h1>
-        <p class="hidden right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ex velit dicta blanditiis, quas fugiat excepturi, dolorum, in adipisci quasi doloribus neque soluta voluptas totam illo tempore vero deleniti laborum.</p>
+        <h1 class="años">Actualidad
+            <div class="hidden circulo right-circulo">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </h1>
+        <div class="barra right"></div>
+        <p class="hidden right text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ex velit dicta blanditiis, quas fugiat excepturi, dolorum, in adipisci quasi doloribus neque soluta voluptas totam illo tempore vero deleniti laborum.</p>
     </section>
 </main>
 </div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    let años = document.querySelectorAll('.años');
+
+    /*function crear(el) {
+        for (let index = 0; index < años.length; index++) {
+        
+        if(index== 0 || index== 2){
+            
+            let circulo = document.createElement('div')
+            circulo.className = 'circulo';
+            el.appendChild(circulo);
+            spanCircle(circulo)
+        }
+        
+    }   
+    }*/
+   
+    
+    /*function spanCircle(father) {
+        for (let index = 0; index < 3; index++) {
+            let spanCircle = document.createElement('span')
+            father.appendChild(spanCircle);
+        }
+        
+    }*/
+
+    años.forEach(element => {
+        
+        element.addEventListener('click', ()=>{
+            //camb el circulo
+           element.firstElementChild.classList.toggle('hidden')
+           let sib =  element.nextElementSibling
+           //cambio el parrafo y la barra
+           //element.nextElementSibling.classList.toggle('hidden')
+           sib.nextElementSibling.classList.toggle('hidden')
+           if (element.classList.contains('años')){
+            element.classList.replace('años', 'años-after')
+            element.nextElementSibling.classList.replace('barra', 'barra-activa')
+            
+           }else{
+            element.classList.replace('años-after', 'años')
+            element.nextElementSibling.classList.replace('barra-activa', 'barra')
+           }
+            
+           
+
+        })
+    });
+
+</script>
 </body>
 </html>

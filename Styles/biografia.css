@@ -13,6 +13,17 @@ body{
     
 }
 
+#fondo nav{
+    float: right;
+    background-color:black;
+}
+
+nav a{
+    background-color: white;
+}
+#button-home{
+    background-color: violet;
+}
 #fondo{
     position: absolute;
     height: 100%;
@@ -22,32 +33,124 @@ body{
     opacity: 0.95;
   }
 main{
+    position: absolute;
     margin: 10%;
+    height: auto;
+    width: 80%;
 }
+
+main::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 5px;
+    background: black;
+    height: 100%;
+}
+.años{
+    position: relative;
+    font-size: 52px;
+    
+    cursor: pointer;
+    
+}
+.años-after{
+    transition: font-size 1.5s;
+    position: relative;
+    font-size: 32px;
+    cursor: pointer;
+}
+.circulo{
+    content: '';
+    position: absolute;
+    left: 35%;
+    bottom: 12px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+}
+
+.circulo span{
+    position: absolute;
+    border-radius: 50%;
+    animation: radar 2s linear infinite;
+}
+
+.circulo span:nth-child(1){
+    animation-delay: 0.5s;
+}
+
+.circulo span:nth-child(2){
+    animation-delay: 1s;
+}
+
+.circulo span:nth-child(3){
+    animation-delay: 1.5s;
+}
+
+@keyframes radar{
+    0%{
+        width: 0;
+        height: 0;
+        border: 4px solid blueviolet;
+        box-shadow: inset 0 0 10px blueviolet 0.8;
+    }
+    100%{
+        width: 25px;
+        height: 25px;
+    }
+}
+
 section{
     position: relative;
     width: 50%;
-}
-
-.section:nth-child(even){
-    position: relative;
-    float: left;
+    height: 200px;
 }
 
 .section:nth-child(odd){
     position: relative;
+    float: left;
+   
+}
+
+.section:nth-child(even){
+    position: relative;
     float: right;
     text-align: right;
     overflow:hidden;
+    top: 60px;
+}
+.barra{
+  width: 0%;
+}
+.barra-activa{
+    content: '';
+    position: absolute;
+    transition: width 1s ease-in-out;
+    width: 50%;
+    height: 5px;
+    background-color: black;
+    right: 0;
+    bottom: 153px;
 }
 
-.left{
-    position: relative;
-    right: 80%;
+
+.hidden{
+    display: none;
 }
+
+
 
 .right{
-    position: relative;
-    left: 80%;
-    
+    left: -0%;
 }
+
+.right-circulo{
+    left: 65%;
+}
+
+
