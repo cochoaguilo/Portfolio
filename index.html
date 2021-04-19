@@ -7,21 +7,21 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="Styles/index.css">
     <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="./Styles/modal.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div id="fondo">
+    <div id="fondo"></div>
     <header>
         <nav>
+            <a href="index.html"
+            ><button><em class="fa fa-home"></em></button
+          ></a>
+              <button id="open-modal"><em class="fa fa-address-book"></em></button>
             <div class="lang-menu">
-                <div class="selected-lang">
-                    Español
-                </div>
-                <ul>
-                    <li>
-                       <a>English</a> 
-                    </li>
-                </ul>
+                <div data-lang="es" class="selected-lang">Español</div>
+                <div data-lang="en" class='option-container'>English</div>
             </div>
         </nav>
     </header>
@@ -29,44 +29,55 @@
     <section id="bio" class="section">
         <img src="Images/book-solid.svg" alt="Biografía" id="icon-bio" class="iconos">
         <div class="texto" >
-            <h1 class="headers">Biografía</h1>
-            <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas beatae sint distinctio et velit asperiores aspernatur porro commodi architecto nisi perferendis soluta expedita quam, fuga optio tenetur quae, quibusdam officiis?</p>
+            <h1 class="headers" id="bio-titulo">Biografía</h1>
+            <p class="parrafo" id="bio-parrafo">Nacido en Buenos Aires en 1991, desde chico me vi inmerso en el mundo de la tecnología, los videojueogs y el cine. Luego de haber cursado primario y secundario en el Colegio Newman, estudié en distintas universidades las carreras de cine, sonido y programación web</p>
         </div>
     </section>
     <section id="audiovisual" class="section">
         <img src="Images/camara.svg" alt="camara" id="icon-camara" class="iconos">
-        <div class="texto">
-            <h2 class="headers">Audiovisual</h2>
-            <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nemo minima est dolores, accusantium laboriosam expedita assumenda ullam, magni a consequatur repudiandae quo omnis ipsam quos quidem excepturi saepe similique.</p>
-        </div>
-    </section>
-    <section id="sonido" class="section">
         <img src="Images/PT2019.png" alt="pro-tools" id="icon-pt" class="iconos">
         <div class="texto">
-            <h3 class="headers">Post-producción</h3>
-            <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nemo minima est dolores, accusantium laboriosam expedita assumenda ullam, magni a consequatur repudiandae quo omnis ipsam quos quidem excepturi saepe similique.</p>
+            <h2 class="headers">Audiovisual</h2>
+            <p class="parrafo" id="audio-parrafo">En el 2013 arrancaría mi carrera en el mundo del cine y el sonido. Participe en varios cortometrajes en varias areas del sonido además de producir, escribir y dirigir mi propio material</p>
         </div>
     </section>
     <section id="web" class="section">
         <img src="Images/html5-brands.svg" alt="html" id="icon-html" class="iconos">
         <div class="texto">
-            <h4 class="headers">Desarrollo Web</h4>
-            <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nemo minima est dolores, accusantium laboriosam expedita assumenda ullam, magni a consequatur repudiandae quo omnis ipsam quos quidem excepturi saepe similique.</p>
+            <h4 class="headers" id="web-titulo">Desarrollo Web</h4>
+            <p class="parrafo" id="web-parrafo">En el 2020 comence a investigar el mundo de la programación. Arranque con el curso de Full Stack Web Developer de Acamica, y luego fui aprendiendo distintas tecnologías dentro de Javascript como React, Vue y NodeJS </p>
         </div>
     </section>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h3>Contacto</h3><em class="fa fa-close" id="close-modal"></em>
+            <div id="modal-contacto">
+                <div class="modal-iconos"><em class="fa fa-instagram"></em>@cochoaguilo </div> 
+                <div class="modal-iconos"><em class="fa fa-facebook"> </em>Marcos (cocho) Aguilo</div>
+                <div class="modal-iconos"><em class="fa fa-envelope"></em>marcosaguilo@hotmail.com
+                    /marcosaguilo@gmail.com</div>
+                <div class="modal-iconos"><em class="fa fa-linkedin"></em></div>
+            </div>
+        </div>
+    </div>
     </main>
-</div>
+
 <script>
     function loadPage(dom, href){
     document.getElementById(dom).addEventListener("click", ()=>{
         window.location.href = href;
     })
 }
+
+
+
+
 loadPage('bio', 'Biografia.html');
 loadPage('audiovisual', 'Audiovisual.html');
-loadPage('sonido', 'Sonido.html');
 loadPage('web', 'Web.html');
  </script>
+ <script src="./JavaScript/idioma.js"></script>
+ <script src="./JavaScript/modal.js"></script>
 </body>
 
 </html>

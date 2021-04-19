@@ -1,9 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url("/Portfolio/Images/CollagePortfolio.png");
+    background-size: cover;
+    position: absolute;
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+#fondo{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(56,110,215,1) 100%);
+    opacity: 0.95;
+  }
+
 nav{
+    position: relative;
     float: right;
     margin-right: 40px;
     margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
 }
 
+nav button{
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    cursor: pointer;
+}
+nav .fa{
+    position: relative;
+    font-size: 32px;
+}
+
+.hidden{
+    display: none;
+}
 
 .selected-lang{
     cursor: pointer;
@@ -18,10 +56,16 @@ nav{
     display: block;
     width: 32px;
     height: 32px;
-    background-image: url(https://www.countryflags.io/es/flat/32.png);
 }
 
-.lang-menu ul{
+.selected-lang[data-lang='es']::before{
+    background-image: url(https://www.countryflags.io/es/flat/32.png);
+}
+.selected-lang[data-lang='en']::before{
+    background-image: url(https://www.countryflags.io/gb/flat/32.png);
+}
+
+.lang-menu .option-container{
     margin: 0;
     padding: 0;
     background-color: transparent;
@@ -31,24 +75,29 @@ nav{
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
-.lang-menu:hover  ul{
+.lang-menu:hover  .option-container{
     display: block;
 }
 
-.lang-menu ul li{
-    list-style: none;
-}
 
-.lang-menu ul li:hover{
+
+.lang-menu .option-container:hover{
     background-color: lightblue;
 }
 
-.lang-menu ul li a:before{
+.lang-menu .option-container:before{
     content: '';
     display: inline-block;
     width: 32px;
     height: 32px;
     margin-right: 10px;
     vertical-align: middle;
+    
+}
+
+.lang-menu .option-container[data-lang='en']::before{
     background-image: url(https://www.countryflags.io/gb/flat/32.png);
+}
+.lang-menu .option-container[data-lang='es']::before{
+    background-image: url(https://www.countryflags.io/es/flat/32.png);
 }

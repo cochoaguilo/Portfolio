@@ -1,13 +1,156 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/main.css" />
+    <link rel="stylesheet" href="./Styles/modal.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <title>Marcos Aguilo - Audiovisual</title>
-</head>
-<body>
-    <section>
-        <iframe src="https://player.vimeo.com/video/195519927" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-        <iframe src="https://player.vimeo.com/video/82977349" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-    </section>
-</body>
+  </head>
+  <style>
+    iframe {
+      position: relative;
+      margin: 5%;
+      border: none;
+      width: 60%;
+    }
+    main {
+      position: relative;
+      margin-top: 90px;
+    }
+    section {
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      width: 100%;
+    }
+    p {
+      position: relative;
+      transition: left 1.5s ease-out;
+      width: 40%;
+      margin: 2.5%;
+      font-size: 20px;
+      left: 50%;
+    }
+
+    .parrafo {
+      left: 0;
+    }
+
+    .fa-arrow-circle-left {
+      font-size: 40px;
+    }
+
+    .flecha {
+      position: relative;
+      left: 32%;
+      transition: left 1.5s ease-out;
+    }
+
+    .flecha-alreves {
+      left: 0;
+      transform: rotate(180deg);
+    }
+  </style>
+  <body>
+    <div id="fondo"></div>
+      <nav>
+        <a href="index.html"
+          ><button><em class="fa fa-home"></em></button
+        ></a>
+        <button id="open-modal"><em class="fa fa-address-book"></em></button
+        >
+        <div class="lang-menu">
+          <div data-lang="es" class="selected-lang">Español</div>
+          <div data-lang="en" class="option-container">English</div>
+        </div>
+      </nav>
+      <main>
+        <section>
+          <iframe
+            src="https://player.vimeo.com/video/233146282"
+            width="640"
+            height="386"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            title="Video Vimeo 1"
+          ></iframe>
+          <h2>Reel de Sonido</h2>
+          <em class="fa fa-arrow-circle-left flecha" id="flecha"></em>
+          <p id="parrafo1">
+            Este video es un collage de cortometrajes en los que participe
+            haciendo Dirección de Sonido, Caña, Edición y Mezcla en Pro Tools y
+            Doblaje. Todos cortos producidos por la Universidad del Cine.
+          </p>
+        </section>
+        <section>
+          <iframe
+            src="https://player.vimeo.com/video/286570976"
+            width="640"
+            height="360"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            title="Video Vimeo 2"
+          ></iframe>
+          <h2>Chicken and the Egg</h2>
+          <em class="fa fa-arrow-circle-left flecha" id="flecha2"></em>
+          <p id="parrafo2">
+            Trabajo práctico de postproducción de sonido hecho en SAE Madrid
+            usando la controladora digital Raven MTX. Cuento con una versión en
+            5.1 para cualquier interesado.
+          </p>
+        </section>
+        <section>
+          <iframe
+            src="https://player.vimeo.com/video/195519927"
+            width="640"
+            height="360"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            title="Justina"
+          ></iframe>
+          <h2>Justina</h2>
+          <em class="fa fa-arrow-circle-left flecha" id="flecha3"></em>
+          <p id="parrafo3">
+            Cortometraje producido en la Universidad del Cine grabado con la
+            cámara RED ONE
+          </p>
+        </section>
+        <section>
+          <iframe
+            src="https://player.vimeo.com/video/82977349"
+            width="640"
+            height="360"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            title="Julieta en el Cielo"
+          ></iframe>
+          <h2>Julieta en el Cielo</h2>
+          <em class="fa fa-arrow-circle-left flecha" id="flecha4"></em>
+          <p id="parrafo4">
+            Primer cortometraje producido en la Universidad del Cine.
+          </p>
+        </section>
+        <div class="modal" id="modal">
+          <div class="modal-content">
+              <h3>Contacto</h3><em class="fa fa-close" id="close-modal"></em>
+              <div id="modal-contacto">
+                  <div class="modal-iconos"><em class="fa fa-instagram"></em>@cochoaguilo </div> 
+                  <div class="modal-iconos"><em class="fa fa-facebook"> </em>Marcos (cocho) Aguilo</div>
+                  <div class="modal-iconos"><em class="fa fa-envelope"></em>marcosaguilo@hotmail.com
+                      /marcosaguilo@gmail.com</div>
+                  <div class="modal-iconos"><em class="fa fa-linkedin"></em></div>
+              </div>
+          </div>
+      </div>
+      </main>
+    <script src="./JavaScript/modal.js"></script>
+    <script src="./JavaScript/animacion.js"></script>
+  </body>
 </html>

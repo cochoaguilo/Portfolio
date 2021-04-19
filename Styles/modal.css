@@ -1,0 +1,43 @@
+
+
+.modal{
+    
+    position: fixed;
+    background:  rgba(22, 3, 3);
+    
+    z-index: 15;
+    width: 300px;
+    
+    transition: left 1s ease-out;
+    left: -35%;
+    height: 400px;
+    color: white;
+    border: solid rgba(85, 84, 9, 0.8);
+    border-left: none;
+}
+
+
+.modal-content{
+    margin: 15%;
+    
+}
+.modal-content h3{
+    text-decoration: underline;
+}
+#close-modal{
+    position: relative;
+    left: 100%;
+    bottom: 40px;
+    font-size: 28px;
+}
+
+#modal-contact{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#modal-iconos{
+    gap: 10px;
+    
+}
