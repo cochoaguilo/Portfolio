@@ -36,6 +36,10 @@ main{
   transition: 1s;
 }
 
+#iconos-audio{
+  top: 190px;
+}
+
 .texto{
   position: absolute;
   

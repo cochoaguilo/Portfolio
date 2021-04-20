@@ -3,6 +3,11 @@ html{
     padding: 0;
 }
 
+#fondo{
+    height: 150%;
+    width: 100%;
+}
+
 main{
     margin: 10%;
     width: 80%;
