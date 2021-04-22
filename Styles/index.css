@@ -22,7 +22,7 @@ main{
 .iconos {
   position: absolute;
   width: 100px;
-  
+  cursor: pointer;
   
   animation-duration: 1s;
   opacity: 1;
@@ -36,8 +36,9 @@ main{
   transition: 1s;
 }
 
-#iconos-audio{
-  top: 190px;
+#bio em{
+  color: rgb(34, 9, 82);
+  font-size: 95px;
 }
 
 .texto{

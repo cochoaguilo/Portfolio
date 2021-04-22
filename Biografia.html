@@ -27,7 +27,10 @@
           <div data-lang="en" class="option-container">English</div>
         </div>
       </nav>
-      <h1 class="titulo-principal">Biografía</h1>
+      <h1 class="titulo-principal">
+      <p class="español">Biografía</p> 
+      <p class="english">Biography</p>
+      </h1>
       <main>
         
         <section class="section">
@@ -40,14 +43,19 @@
             </div>
           </h1>
           <div class="barra"></div>
-          <p class="hidden left text">
+          <div class="hidden">
+          <p class="español">
             Luego de vivir 4 años en la ciudad de Azul, me mudo a Buenos Aires
-            donde empezaria el colegio Newman. Forme parte de la orquesta
+            donde empezaria el colegio Newman. <br><br> Forme parte de la orquesta
             tocando la flauta traversa ademas de partcipar de distintos grupos
-            sociales que daban asistencia a gente necesitada. Al terminar el
+            sociales que daban asistencia a gente necesitada. <br><br> Al terminar el
             colegio, intentaria estudiar derecho pero dicha carrera me resulto
             distinto a lo que yo pensaba.
           </p>
+          <p class="english">
+            After living 4 years in the city of Azul, I moved to Buenos Aires where I would start the Newman school. <br><br> He was part of the orchestra playing the transverse flute in addition to participating in different social groups that gave assistance to people in need. <br><br> When I finished school, I would try to study law but that career turned out to be different from what I thought.
+          </p>
+        </div>
         </section>
         <section class="section">
           <h1 class="años">
@@ -58,10 +66,16 @@
               <span></span>
             </div>
           </h1>
-          <div class="barra"></div>
-          <p class="hidden right text">
-            Periodo en el que estudio en la Universidad del Cine y me recibo de Director Cinematográfico. Participo de varios cortometrajes haciendo sonido directo además de producir mis dos cortometrajes. Dichas participaciones fueron importantes para poder acceder a la pasantía de sonido de la Universidad donde aprenderia a manejar el Pro Tools haciendo la edición y la mezcla de los cortometrajes que se producian dentro de la misma.
-          </p>
+          <div class="barra right"></div>
+          <div class="hidden right text"> 
+            <p class="español">
+              Periodo en el que estudio en la Universidad del Cine y me recibo de Director Cinematográfico. <br><br> Participo de varios cortometrajes haciendo sonido directo además de producir mis dos cortometrajes. <br><br> Dichas participaciones fueron importantes para poder acceder a la pasantía de sonido de la Universidad donde aprenderia a manejar el Pro Tools haciendo la edición y la mezcla de los cortometrajes que se producian dentro de la misma.
+            </p>
+            <p class="english">
+              Period in which I study at the Universidad del Cine and I am a Film Director. <br><br> I participate in several short films making direct sound in addition to producing my two short films. <br><br> These participations were important to be able to access the sound internship at the University where he would learn to use Pro Tools by editing and mixing the short films that were produced within it.
+            </p>
+          </div>
+          
         </section>
         <section class="section">
           <h1 class="años">
@@ -73,9 +87,15 @@
             </div>
           </h1>
           <div class="barra"></div>
-          <p class="hidden left text">
-            Luego de terminar la pasantía y de recibirme, me voy a estudiar un curso intensivo de guión en la New York Film Academy. Ese mismo año me iría a España a estudiar Audio Production en SAE Madrid. Volveria a fines del 2018. Retome la participacion en algunos cortometrajes y largometrajes independientes además de adentrarme en eventos y música en vivo. Tuve un paso breve por un canal de televisión online. 
-          </p>
+          <div class="hidden left text">
+            <p class="español" data-lang="es">
+              Luego de terminar la pasantía y de recibirme, me voy a estudiar un curso intensivo de guión en la New York Film Academy. <br><br> Ese mismo año me iría a España a estudiar Audio Production en SAE Madrid. Volveria a fines del 2018. <br><br> Retome la participacion en algunos cortometrajes y largometrajes independientes además de adentrarme en eventos y música en vivo. Tuve un paso breve por un canal de televisión online. 
+            </p> 
+            <p class="english" data-lang="en">
+              After finishing the internship and receiving me, I am going to study an intensive scriptwriting course at the New York Film Academy. <br><br> That same year I would go to Spain to study Audio Production at SAE Madrid. I would return at the end of 2018. <br><br> I resumed participation in some independent short and feature films as well as getting into events and live music. I had a brief stint on an online television channel.
+            </p>
+          </div>
+          
         </section>
         <section class="section">
           <h1 class="años">
@@ -87,9 +107,15 @@
             </div>
           </h1>
           <div class="barra right"></div>
-          <p class="hidden right text">
-            Como a todos, la pandemia me sirvió para pensar un poco mi futuro. Inicie el curso de Desarrollo Web Full Stack en Acámica, el cual termine en Marzo del 2021. Sigo aprendiendo nuevas herramientas en el mundo de la programación para posicionarme mejor en el mercado laboral.
-          </p>
+          <div class="hidden right text">
+            <p class="español">
+              Como a todos, la pandemia me sirvió para pensar un poco mi futuro. <br><br> Inicie el curso de Desarrollo Web Full Stack en Acámica, el cual termine en Marzo del 2021. <br><br> Sigo aprendiendo nuevas herramientas en el mundo de la programación para posicionarme mejor en el mercado laboral.
+            </p>
+            <p class="english">
+              Like everyone else, the pandemic helped me to think a little about my future. <br><br> Start the Full Stack Web Development course at Acámica, which ends in March 2021. <br><br> I keep learning new tools in the world of programming to better position myself in the job market.
+            </p>
+          </div>
+          
         </section>
         <div class="modal" id="modal">
             <div class="modal-content">
@@ -117,28 +143,7 @@
 
     <script>
       let años = document.querySelectorAll(".años");
-
-      /*function crear(el) {
-        for (let index = 0; index < años.length; index++) {
-        
-        if(index== 0 || index== 2){
-            
-            let circulo = document.createElement('div')
-            circulo.className = 'circulo';
-            el.appendChild(circulo);
-            spanCircle(circulo)
-        }
-        
-    }   
-    }*/
-
-      /*function spanCircle(father) {
-        for (let index = 0; index < 3; index++) {
-            let spanCircle = document.createElement('span')
-            father.appendChild(spanCircle);
-        }
-        
-    }*/
+    
 
       años.forEach((element) => {
         element.addEventListener("click", () => {
@@ -147,16 +152,20 @@
           let sib = element.nextElementSibling;
           //cambio el parrafo y la barra
           //element.nextElementSibling.classList.toggle('hidden')
-          sib.nextElementSibling.classList.toggle("hidden");
+          
+          sib.nextElementSibling.classList.replace("hidden", "text");
+          sib.nextElementSibling.classList.toggle("opacity");
+          
           if (element.classList.contains("años")) {
             element.classList.replace("años", "años-after");
-            element.nextElementSibling.classList.replace(
+            sib.classList.replace(
               "barra",
               "barra-activa"
             );
+            
           } else {
             element.classList.replace("años-after", "años");
-            element.nextElementSibling.classList.replace(
+            sib.classList.replace(
               "barra-activa",
               "barra"
             );
@@ -165,5 +174,6 @@
       });
     </script>
     <script src="./JavaScript/idioma.js"></script>
+    <script src="./JavaScript/getIdioma.js"></script>
   </body>
 </html>

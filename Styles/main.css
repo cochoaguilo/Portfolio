@@ -29,14 +29,16 @@ nav{
     margin-top: 20px;
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 50px;
 }
 
 nav button{
+    position: relative;
     background-color: transparent;
     border: none;
     width: 40px;
     cursor: pointer;
+    height: 40px;
 }
 nav .fa{
     position: relative;
@@ -69,6 +71,9 @@ nav .fa{
 }
 .selected-lang[data-lang='en']::before{
     background-image: url(https://www.countryflags.io/gb/flat/32.png);
+}
+.lang-menu{
+    position: relative;
 }
 
 .lang-menu .option-container{
@@ -112,4 +117,9 @@ nav .fa{
     position: relative;
     left: 15%;
     font-size: 58px;
+    width: 50%;
+}
+
+.english{
+    display: none;
 }

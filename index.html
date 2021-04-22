@@ -27,27 +27,37 @@
     </header>
     <main>
     <section id="bio" class="section">
-        <img src="Images/book-solid.svg" alt="Biografía" id="icon-bio" class="iconos">
+        <em class="fa fa-book iconos" alt="Biografía" id="icon-bio" ></em>
         <div class="texto" >
             <h1 class="headers" id="bio-titulo">Biografía</h1>
-            <p class="parrafo" id="bio-parrafo">Nacido en Buenos Aires en 1991, desde chico me vi inmerso en el mundo de la tecnología, los videojueogs y el cine. Luego de haber cursado primario y secundario en el Colegio Newman, estudié en distintas universidades las carreras de cine, sonido y programación web</p>
+            <div class="parrafo" id="bio-parrafo">
+                <p class="español">Nacido en Buenos Aires en 1991, desde chico me vi inmerso en el mundo de la tecnología, los videojueogs y el cine. Luego de haber cursado primario y secundario en el Colegio Newman, estudié en distintas universidades las carreras de cine, sonido y programación web</p>
+                <p class="english">Born in Buenos Aires in 1991, since I was a kid I've seen myself inmerse in technolgy, videogames and movies. After I attended primary and secondary school at Newman School, I've studied cinematography, sound design and web developer at different universities</p>
+            </div>
+            
         </div>
     </section>
     <section id="audiovisual" class="section">
-        <div class="iconos" id="iconos-audio">
-        <img src="Images/camara.svg" alt="camara" id="icon-camara" class="iconos">
+        
+        
         <img src="Images/PT2019.png" alt="pro-tools" id="icon-pt" class="iconos">
-    </div>
+   
         <div class="texto">
             <h2 class="headers">Audiovisual</h2>
-            <p class="parrafo" id="audio-parrafo">En el 2013 arrancaría mi carrera en el mundo del cine y el sonido. Participe en varios cortometrajes en varias areas del sonido además de producir, escribir y dirigir mi propio material</p>
+            <div class="parrafo" id="audio-parrafo">
+            <p class="español">En el 2013 arrancaría mi carrera en el mundo del cine y el sonido. Participe en varios cortometrajes en varias areas del sonido además de producir, escribir y dirigir mi propio material</p>
+            <p class="english">In 2013 my film and sound carrer started. I participated en many short-films through the diverse areas in the sound department besides producing, writing and directing my own material</p>
+        </div>
         </div>
     </section>
     <section id="web" class="section">
-        <img src="Images/html5-brands.svg" alt="html" id="icon-html" class="iconos">
+        <img src="Images/250px-HTML5_logo_and_wordmark.svg.png" alt="html" id="icon-html" class="iconos">
         <div class="texto">
             <h4 class="headers" id="web-titulo">Desarrollo Web</h4>
-            <p class="parrafo" id="web-parrafo">En el 2020 comence a investigar el mundo de la programación. Arranque con el curso de Full Stack Web Developer de Acamica, y luego fui aprendiendo distintas tecnologías dentro de Javascript como React, Vue y NodeJS </p>
+            <div class="parrafo" id="web-parrafo">
+            <p class="español">En el 2020 comence a investigar el mundo de la programación. Arranque con el curso de Full Stack Web Developer de Acamica, y luego fui aprendiendo distintas tecnologías dentro de Javascript como React, Vue y NodeJS </p>
+            <p class="english">In 2020 I began to investigate the programming world. I started with the Full Stack Web Developer course in Acamica, and then I learned different technologies inside Javascript like React, Vue and NodeJS</p>
+        </div>
         </div>
     </section>
     <div class="modal" id="modal">
@@ -86,6 +96,7 @@ loadPage('audiovisual', 'Audiovisual.html');
 loadPage('web', 'Web.html');
  </script>
  <script src="./JavaScript/idioma.js"></script>
+ <script src="./JavaScript/getIdioma.js"></script>
  <script src="./JavaScript/modal.js"></script>
 </body>
 

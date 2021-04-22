@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <title>Marcos Aguilo - Audiovisual</title>
   </head>
   <style>
@@ -30,7 +30,10 @@
       overflow: hidden;
       width: 100%;
     }
-    p {
+    section h2{
+      margin-right: 2%;
+    }
+    section div {
       position: relative;
       transition: left 1.5s ease-out;
       width: 40%;
@@ -60,6 +63,9 @@
     .modal{
       bottom: 200px;
     }
+    .english{
+      display: none;
+    }
   </style>
   <body>
     <div id="fondo"></div>
@@ -87,11 +93,19 @@
           ></iframe>
           <h2>Reel de Sonido</h2>
           <em class="fa fa-arrow-circle-left flecha" id="flecha"></em>
-          <p id="parrafo1">
-            Este video es un collage de cortometrajes en los que participe
-            haciendo Dirección de Sonido, Caña, Edición y Mezcla en Pro Tools y
-            Doblaje. Todos cortos producidos por la Universidad del Cine.
-          </p>
+          <div id="parrafo1">
+            <p  class="español">
+              Este video es un collage de cortometrajes en los que participe
+              haciendo Dirección de Sonido, Caña, Edición y Mezcla en Pro Tools y
+              Doblaje. Todos cortos producidos por la Universidad del Cine.
+            </p>
+            <p class="english">
+              This video is a collage of short films in which I participated
+               doing Sound Direction, Reed, Editing and Mixing in Pro Tools and
+               Dubbing. All shorts produced by the Universidad del Cine.
+            </p>
+          </div>
+          
         </section>
         <section>
           <iframe
@@ -104,11 +118,19 @@
           ></iframe>
           <h2>Chicken and the Egg</h2>
           <em class="fa fa-arrow-circle-left flecha" id="flecha2"></em>
-          <p id="parrafo2">
-            Trabajo práctico de postproducción de sonido hecho en SAE Madrid
-            usando la controladora digital Raven MTX. Cuento con una versión en
-            5.1 para cualquier interesado.
-          </p>
+          <div id="parrafo2">
+            <p class="español">
+              Trabajo práctico de postproducción de sonido hecho en SAE Madrid
+              usando la controladora digital Raven MTX. Cuento con una versión en
+              5.1 para cualquier interesado.
+            </p>
+            <p class="english">
+              Practical sound post-production work done at SAE Madrid
+               using the Raven MTX digital controller. I have a version in
+               5.1 for any interested party.
+            </p>
+          </div>
+          
         </section>
         <section>
           <iframe
@@ -121,10 +143,17 @@
           ></iframe>
           <h2>Justina</h2>
           <em class="fa fa-arrow-circle-left flecha" id="flecha3"></em>
-          <p id="parrafo3">
-            Cortometraje producido en la Universidad del Cine grabado con la
-            cámara RED ONE
-          </p>
+          <div id="parrafo3">
+            <p class="español">
+              Cortometraje producido en la Universidad del Cine grabado con la
+              cámara RED ONE
+            </p>
+            <p class="english">
+              Short film produced at the Universidad del Cine recorded with the
+               RED ONE camera
+            </p>
+          </div>
+          
         </section>
         <section>
           <iframe
@@ -137,9 +166,15 @@
           ></iframe>
           <h2>Julieta en el Cielo</h2>
           <em class="fa fa-arrow-circle-left flecha" id="flecha4"></em>
-          <p id="parrafo4">
-            Primer cortometraje producido en la Universidad del Cine.
-          </p>
+          <div id="parrafo4">
+            <p class="español">
+              Primer cortometraje producido en la Universidad del Cine.
+            </p>
+            <p class="english">
+              First short film produced at the Universidad del Cine.
+            </p>
+          </div>
+          
         </section>
         <div class="modal" id="modal">
           <div class="modal-content">
@@ -163,5 +198,7 @@
       </main>
     <script src="./JavaScript/modal.js"></script>
     <script src="./JavaScript/animacion.js"></script>
+    <script src="./JavaScript/idioma.js"></script>
+    <script src="./JavaScript/getIdioma.js"></script>
   </body>
 </html>

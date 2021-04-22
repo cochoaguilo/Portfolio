@@ -4,13 +4,14 @@ html{
 }
 
 #fondo{
-    height: 150%;
+    height: 120%;
     width: 100%;
 }
 
 main{
     margin: 10%;
     width: 80%;
+    height: 300px;
 }
 
 main::before{
@@ -19,12 +20,12 @@ main::before{
     left: 50%;
     width: 5px;
     background: black;
-    height: 100%;
+    height: 80%;
 }
 .años{
     position: relative;
     font-size: 52px;
-    
+
     cursor: pointer;
     
 }
@@ -82,7 +83,7 @@ main::before{
 section{
     position: relative;
     width: 50%;
-    height: 200px;
+    height: 320px;
 }
 
 .section:nth-child(odd){
@@ -97,6 +98,7 @@ section{
     text-align: right;
     overflow:hidden;
     top: 60px;
+    
 }
 .barra{
   width: 0%;
@@ -109,12 +111,16 @@ section{
     height: 5px;
     background-color: black;
     right: 0;
-    bottom: 153px;
+    bottom: 80%;
 }
 
+.english{
+    display: none;
+}
 
 .hidden{
     display: none;
+   
 }
 
 
@@ -125,6 +131,19 @@ section{
 
 .right-circulo{
     left: 65%;
+}
+
+.text{
+    position: relative;
+    width: 90%;
+    font-size: 18px;
+    left: 5%;
+    opacity: 0;
+    display: block;
+}
+
+.opacity{
+    opacity: 1;
 }
 
 

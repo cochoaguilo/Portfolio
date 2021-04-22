@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </head>
   <style>
     html {
@@ -31,6 +32,10 @@
       border-style: outset;
       width: 38%;
       height: fit-content;
+    }
+    section blockquote{
+      position: relative;
+      width: 100%;
     }
     .texto {
       position: relative;
@@ -72,7 +77,10 @@
         <div data-lang="en" class="option-container">English</div>
       </div>
     </nav>
-    <h1 class="titulo-principal">Desarrollo Web</h1>
+    <h1 class="titulo-principal">
+      <p class="español">Desarrollo Web</p> 
+      <p class="english">Web Developer</p>
+    </h1>
     
     <main>
       <section>
@@ -355,12 +363,19 @@
         <script async src="//www.instagram.com/embed.js"></script>
         <div class="texto">
           <h2>Giphos</h2>
-          <p>
+          <p class="español">
              Proyecto armado con HTML, CSS y JavaScript puro. Es una página que hace llamados a la API de GIPHY según las busquedas y las tendencias.
              <br>
              Repositorio: <a target="_blank" href="http://github.com/cochoaguilo/GIFOS">Giphos</a>
              <br>
              Página Web: <a href="https://cochoaguilo.github.io/GIFOS/">Giphos</a>
+          </p>
+          <p class="english">
+            Project armed with HTML, CSS and pure JavaScript. It is a page that makes calls to the GIPHY API according to searches and trends.
+              <br>
+              Repository: <a target="_blank" href="http://github.com/cochoaguilo/GIFOS"> Giphos </a>
+              <br>
+              Website: <a href="https://cochoaguilo.github.io/GIFOS/"> Giphos </a>
           </p>
         </div>
       </section>
@@ -661,10 +676,13 @@
         />
         <div class="texto">
           <h2>Delilah Resto</h2>
-          <p>
+          <p class="español">
             Back-End de un servidor para un resto-bar. Construida con NodeJS, habiendo instalado dependencias para la autenticacion como jsonwebtoken y para la autorización como bcrypt, además de declarar las rutas a través de express.
             <br>
             Repositorio: <a href="http://github.com/cochoaguilo/DelilahResto">Delilah</a>
+          </p>
+          <p class="english">
+            Back-end of a server for a resto-bar. Built with NodeJS, having installed dependencies for authentication like jsonwebtoken and for authorization like bcrypt, in addition to declaring routes through express.
           </p>
         </div>
       </section>
@@ -691,5 +709,7 @@
     </main>
 
     <script src="./JavaScript/modal.js"></script>
+    <script src="./JavaScript/idioma.js"></script>
+    <script src="./JavaScript/getIdioma.js"></script>
   </body>
 </html>

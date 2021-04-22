@@ -5,42 +5,36 @@ const menu = document.querySelector('.lang-menu')
 
 const attLang = selecLang.getAttribute('data-lang');
 
-const bioTitulo = document.getElementById('bio-titulo'),
-      bioParraf = document.getElementById('bio-parrafo'),
-      audiovisual = document.getElementById('audio-parrafo'),
-      webTitulo = document.getElementById('web-titulo'),
-      webParrafo = document.getElementById('web-parrafo'),
-      textBio = document.querySelectorAll('.text')
+
+    optionsContainer.addEventListener('click', ()=>{
+    
+    
+        if(selecLang.innerHTML =='Español'){
+            selecLang.innerHTML = 'English'
+            optionsContainer.innerHTML = 'Español'
+            selecLang.setAttribute('data-lang', 'en')
+            optionsContainer.setAttribute('data-lang', 'es')
+            sessionStorage.setItem('lang', 'en')
+            $('.español').css('display', 'none');
+            $('.english').css('display', 'inline');
+            
+            
+        }else{
+            
+            selecLang.innerHTML ='Español'
+            optionsContainer.innerHTML = 'English'
+            selecLang.setAttribute('data-lang', 'es')
+            optionsContainer.setAttribute('data-lang', 'en')
+            sessionStorage.setItem('lang', 'es')
+            $('.español').css('display', 'inline');
+            $('.english').css('display', 'none');
+        }
+        
+        
+        
+    })
 
 
-optionsContainer.addEventListener('click', ()=>{
-    
-    if(selecLang.innerHTML =='Español'){
-        selecLang.innerHTML = 'English'
-        optionsContainer.innerHTML = 'Español'
-        selecLang.setAttribute('data-lang', 'en')
-        optionsContainer.setAttribute('data-lang', 'es')
-        bioTitulo.textContent = data['en'].titulo;
-        bioParraf.textContent = data['en'].bio;
-        audiovisual.textContent = data['en'].audiovisual;
-        webTitulo.textContent = data['en'].prgrm;
-        webParrafo.textContent = data['en'].web;
-        textBio[0].textContent = data['en'].bio1991
-    }else{
-        selecLang.innerHTML ='Español'
-        optionsContainer.innerHTML = 'English'
-        selecLang.setAttribute('data-lang', 'es')
-        optionsContainer.setAttribute('data-lang', 'en')
-        bioTitulo.textContent = data['es'].titulo;
-        bioParraf.textContent = data['es'].bio;
-        audiovisual.textContent = data['es'].audiovisual;
-        webTitulo.textContent = data['es'].prgrm;
-        webParrafo.textContent = data['es'].web;
-    }
-    
-    
-    
-})
 
 const data = {
     'es': 

@@ -30,6 +30,7 @@
     left: 100%;
     bottom: 60px;
     font-size: 28px;
+    cursor: pointer;
 }
 
 #modal-contact{
