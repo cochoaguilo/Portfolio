@@ -6,7 +6,7 @@
     background:  rgba(22, 3, 3);
     
     z-index: 15;
-    width: 350px;
+    width: 390px;
     
     transition: left 1s ease-out;
     left: -35%;
@@ -33,14 +33,17 @@
     cursor: pointer;
 }
 
-#modal-contact{
+#modal-contacto{
     position: relative;
     display: flex;
     flex-wrap: wrap;
 }
 
 .modal-iconos{
+    position: relative;
+    width: 90%;
     font-size: 20px;
+    margin: 5% 0;
 }
 
 .modal-iconos a{

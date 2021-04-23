@@ -16,7 +16,7 @@ const attLang = selecLang.getAttribute('data-lang');
             optionsContainer.setAttribute('data-lang', 'es')
             sessionStorage.setItem('lang', 'en')
             $('.español').css('display', 'none');
-            $('.english').css('display', 'inline');
+            $('.english').css('display', 'block');
             
             
         }else{
@@ -26,7 +26,7 @@ const attLang = selecLang.getAttribute('data-lang');
             selecLang.setAttribute('data-lang', 'es')
             optionsContainer.setAttribute('data-lang', 'en')
             sessionStorage.setItem('lang', 'es')
-            $('.español').css('display', 'inline');
+            $('.español').css('display', 'block');
             $('.english').css('display', 'none');
         }
         

@@ -12,7 +12,7 @@ let lang = sessionStorage.getItem('lang')
             selecLang.setAttribute('data-lang', 'es')
             optionsContainer.setAttribute('data-lang', 'en')
             $('.english').css('display', 'none');
-            $('.español').css('display', 'inline');
+            $('.español').css('display', 'block');
          }
          if(lang == 'en'){
              
@@ -20,7 +20,7 @@ let lang = sessionStorage.getItem('lang')
             optionsContainer.innerHTML = 'Español'
             selecLang.setAttribute('data-lang', 'en')
             optionsContainer.setAttribute('data-lang', 'es')
-             $('.english').css('display', 'inline');
+             $('.english').css('display', 'block');
              $('.español').css('display', 'none');
          }
     }
