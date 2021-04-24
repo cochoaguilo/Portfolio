@@ -24,11 +24,13 @@ body{
 nav{
     position: relative;
     float: right;
-    margin-right: 40px;
+    margin-right: 80px;
     margin-top: 20px;
     display: flex;
     flex-direction: row;
     gap: 50px;
+    align-items: center;
+
 }
 
 nav button{
@@ -51,13 +53,14 @@ nav .fa{
 
 
 .selected-lang{
+    position: relative;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
-    line-height: 2;
-    width: 120px;
+    
+    width: 130px;
 }
-
+/*
 .selected-lang:before{
     content: '';
     display: block;
@@ -66,34 +69,35 @@ nav .fa{
 }
 
 .selected-lang[data-lang='es']::before{
-    background-image: url(https://www.countryflags.io/es/flat/32.png);
+    background-image: url(https://freesvg.org/claudita-flag-of-spain);
     transform: scale(1.2);
 }
 .selected-lang[data-lang='en']::before{
     background-image: url(https://www.countryflags.io/gb/flat/32.png);
     transform: scale(1.2);
-}
+}*/
+
 .lang-menu{
     position: relative;
-    top: 2.5px;
+   
     font-size: 20px;
 }
 
 .lang-menu .option-container{
-    position: relative;
+    position: absolute;
     margin: 0;
     padding: 0;
     background-color: transparent;
     border: 1px solid transparent;
     display: none;
     cursor: pointer;
-    width: 120px;
+    width: 130px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     
 }
 
 .lang-menu:hover  .option-container{
-    display: block;
+    display: flex;
 }
 
 
@@ -101,27 +105,33 @@ nav .fa{
 .lang-menu .option-container:hover{
     background-color:  rgb(115, 28, 197);
 }
-
+/*
 .lang-menu .option-container:before{
     content: '';
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    margin-right: 10px;
-    vertical-align: middle;
     
-}
+    
+}*/
 
+.lang-menu img{
+    position: relative;
+    
+    width: 35%;
+    height: 35%;
+    margin-right: 10px;
+    align-self: center;
+}
+/*
 .lang-menu .option-container[data-lang='en']::before{
-    background-image: url(https://www.countryflags.io/gb/flat/32.png);
+    
     transform: scale(1.2);
+    
    
 }
 .lang-menu .option-container[data-lang='es']::before{
     background-image: url(https://www.countryflags.io/es/flat/32.png);
     transform: scale(1.2);
 }
-
+*/
 .titulo-principal{
     position: relative;
     left: 15%;

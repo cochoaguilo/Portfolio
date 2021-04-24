@@ -7,19 +7,21 @@ let lang = sessionStorage.getItem('lang')
             return
         }
         if(lang == 'es'){
-            selecLang.innerHTML ='Español'
-            optionsContainer.innerHTML = 'English'
+            selecLang.lastElementChild.textContent = 'Español'
+            optionsContainer.lastElementChild.textContent = 'English'
+            changeFLag.setAttribute('src', '../Portfolio/Images/claudita-Flag-of-Spain.svg')
+            optionsContainer.firstElementChild.setAttribute('src', '../Portfolio/Images/UK-union-flag.svg')
             selecLang.setAttribute('data-lang', 'es')
-            optionsContainer.setAttribute('data-lang', 'en')
             $('.english').css('display', 'none');
             $('.español').css('display', 'block');
          }
          if(lang == 'en'){
              
-             selecLang.innerHTML = 'English'
-            optionsContainer.innerHTML = 'Español'
+            selecLang.lastElementChild.textContent = 'English'
+            optionsContainer.lastElementChild.textContent = 'Español'
             selecLang.setAttribute('data-lang', 'en')
-            optionsContainer.setAttribute('data-lang', 'es')
+            changeFLag.setAttribute('src','../Portfolio/Images/UK-union-flag.svg');
+            optionsContainer.firstElementChild.setAttribute("src", "../Portfolio/Images/claudita-Flag-of-Spain.svg")
              $('.english').css('display', 'block');
              $('.español').css('display', 'none');
          }

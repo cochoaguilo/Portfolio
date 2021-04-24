@@ -1,19 +1,21 @@
 
 const selecLang = document.querySelector('.selected-lang')
 const optionsContainer = document.querySelector('.option-container')
-const menu = document.querySelector('.lang-menu')
+let changeFLag = selecLang.firstElementChild;
 
-const attLang = selecLang.getAttribute('data-lang');
 
+//let langElement = selecLang.parentElement;
 
     optionsContainer.addEventListener('click', ()=>{
-    
-    
-        if(selecLang.innerHTML =='Español'){
-            selecLang.innerHTML = 'English'
-            optionsContainer.innerHTML = 'Español'
+        
+        const attLang = selecLang.getAttribute('data-lang');
+        if(attLang =='es'){
+            
+            selecLang.lastElementChild.textContent = 'English'
+            optionsContainer.lastElementChild.textContent = 'Español'
             selecLang.setAttribute('data-lang', 'en')
-            optionsContainer.setAttribute('data-lang', 'es')
+            changeFLag.setAttribute('src','../Portfolio/Images/UK-union-flag.svg');
+            optionsContainer.firstElementChild.setAttribute("src", "../Portfolio/Images/claudita-Flag-of-Spain.svg")
             sessionStorage.setItem('lang', 'en')
             $('.español').css('display', 'none');
             $('.english').css('display', 'block');
@@ -21,10 +23,11 @@ const attLang = selecLang.getAttribute('data-lang');
             
         }else{
             
-            selecLang.innerHTML ='Español'
-            optionsContainer.innerHTML = 'English'
+            selecLang.lastElementChild.textContent = 'Español'
+            optionsContainer.lastElementChild.textContent = 'English'
+            changeFLag.setAttribute('src', '../Portfolio/Images/claudita-Flag-of-Spain.svg')
+            optionsContainer.firstElementChild.setAttribute('src', '../Portfolio/Images/UK-union-flag.svg')
             selecLang.setAttribute('data-lang', 'es')
-            optionsContainer.setAttribute('data-lang', 'en')
             sessionStorage.setItem('lang', 'es')
             $('.español').css('display', 'block');
             $('.english').css('display', 'none');
