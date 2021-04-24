@@ -47,7 +47,7 @@
             </div>
           </h1>
           <div class="barra"></div>
-          <div class="hidden">
+          <div class="hidden left text">
           <p class="español">
             Luego de vivir 4 años en la ciudad de Azul, me mudo a Buenos Aires
             donde empezaria el colegio Newman. <br><br> Forme parte de la orquesta
@@ -155,11 +155,12 @@
         element.addEventListener("click", () => {
           //camb el circulo
           element.firstElementChild.classList.toggle("hidden");
+          element.firstElementChild.classList.toggle("opacity");
           let sib = element.nextElementSibling;
           //cambio el parrafo y la barra
           //element.nextElementSibling.classList.toggle('hidden')
           
-          sib.nextElementSibling.classList.replace("hidden", "text");
+          sib.nextElementSibling.classList.toggle("hidden");
           sib.nextElementSibling.classList.toggle("opacity");
           
           if (element.classList.contains("años")) {

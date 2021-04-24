@@ -4,13 +4,13 @@
     
     position: fixed;
     background:  rgba(22, 3, 3);
-    
+    top: 20%;
     z-index: 15;
-    width: 390px;
+    width: 30%;
     
     transition: left 1s ease-out;
     left: -35%;
-    height: 450px;
+    height: 60%;
     color: white;
     border: solid rgba(85, 84, 9, 0.8);
     border-left: none;
