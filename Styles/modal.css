@@ -6,11 +6,11 @@
     background:  rgba(22, 3, 3);
     top: 20%;
     z-index: 15;
-    width: 30%;
+    width: 30vw;
     
     transition: left 1s ease-out;
     left: -35%;
-    height: 60%;
+    height: 60vh;
     color: white;
     border: solid rgba(85, 84, 9, 0.8);
     border-left: none;
@@ -41,13 +41,19 @@
 
 .modal-iconos{
     position: relative;
-    width: 90%;
+    width: 90% fit-content;
     font-size: 20px;
     margin: 5% 0;
 }
 
 .modal-iconos a{
     position: relative;
-    left: 30%;
-    
+    left: 20%;
+    text-decoration-line: none;
+}
+
+.modal-iconos p{
+    position: relative;
+    left: 10%;
+    display: inline;
 }
