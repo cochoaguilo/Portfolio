@@ -69,3 +69,14 @@ main{
 #web{
   border-right: none;
 }
+
+@media (min-width:1500px){
+  .parrafo{
+    font-size: 28px;
+  }
+
+  .iconos{
+    width: 150px;
+  }
+
+}
