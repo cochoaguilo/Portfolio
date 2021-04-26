@@ -55,6 +55,7 @@ main::before{
     position: absolute;
     border-radius: 50%;
     animation: radar 2s linear infinite;
+    
 }
 
 .circulo span:nth-child(1){

@@ -37,6 +37,8 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 5vh;
+   
 }
 
 .modal-iconos{
@@ -61,5 +63,14 @@
 @media (min-width: 1500px){
     .modal-iconos{
         font-size: 28px;
+    }
+}
+
+@media(max-width: 1200px){
+    .modal-content h3{
+        margin: 0;
+    }
+    .modal-iconos{
+        font-size: 16px;
     }
 }
