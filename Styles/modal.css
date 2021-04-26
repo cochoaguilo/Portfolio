@@ -4,7 +4,7 @@
     
     position: fixed;
     background:  rgba(22, 3, 3);
-    top: 20%;
+    top: 20vh;
     z-index: 15;
     width: 30vw;
     
@@ -56,4 +56,10 @@
     position: relative;
     left: 10%;
     display: inline;
+}
+
+@media (min-width: 1500px){
+    .modal-iconos{
+        font-size: 28px;
+    }
 }
