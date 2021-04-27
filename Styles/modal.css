@@ -4,13 +4,13 @@
     
     position: fixed;
     background:  rgba(22, 3, 3);
-    top: 20vh;
+    top: 18vh;
     z-index: 15;
-    width: 30vw;
-    
+    width: 25vw;
+    padding: 3%;
     transition: left 1s ease-out;
     left: -35%;
-    height: 60vh;
+    height: 50vh;
     color: white;
     border: solid rgba(85, 84, 9, 0.8);
     border-left: none;
@@ -18,18 +18,20 @@
 
 
 .modal-content{
-    margin: 15%;
-    
+    top: 0;
+    position: relative;
+    height: 100%;
 }
 .modal-content h3{
     text-decoration: underline;
     font-size: 30px;
+    margin: 0;
 }
 #close-modal{
     position: relative;
-    left: 100%;
-    bottom: 60px;
-    font-size: 28px;
+    float: right;
+    bottom: 4vh;
+    font-size: 2vw;
     cursor: pointer;
 }
 
@@ -37,29 +39,33 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 5vh;
-   
+    height: fit-content;
+    top: 4vh;
+    margin: 5% 0;
 }
 
 .modal-iconos{
     position: relative;
-    width: 90% fit-content;
-    font-size: 20px;
+    width: 100%;
+    font-size: 1.7vw;
     margin: 5% 0;
 }
 
 .modal-iconos a{
     position: relative;
-    left: 20%;
+    left: 4vw;
     text-decoration-line: none;
+    font-size: 100%;
 }
 
 .modal-iconos p{
     position: relative;
-    left: 10%;
+    left: 5%;
     display: inline;
+  
 }
 
+/*
 @media (min-width: 1500px){
     .modal-iconos{
         font-size: 28px;
