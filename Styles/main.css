@@ -46,6 +46,9 @@ nav .fa{
     font-size: 32px;
 }
 
+#button-home{
+    font-size: 42px;
+}
 .hidden{
     display: none;
 }
@@ -91,7 +94,7 @@ nav .fa{
     border: 1px solid transparent;
     display: none;
     cursor: pointer;
-    width: 130px;
+    width: 100%;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     
 }
@@ -155,5 +158,12 @@ nav .fa{
     }
     nav .fa{
         font-size: 42px;
+    }
+    #button-home{
+        font-size: 54px;
+    }
+    .selected-lang{
+        width: 160px;
+        top: 2px;
     }
 }

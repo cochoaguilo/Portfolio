@@ -78,5 +78,7 @@ main{
   .iconos{
     width: 150px;
   }
-
+  #bio em{
+    font-size: 150px;
+  }
 }
