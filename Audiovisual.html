@@ -68,6 +68,26 @@
     .english{
       display: none;
     }
+
+    @media (max-width:700px){
+      section{
+        flex-direction: column;
+      }
+      section div{
+        transition: none;
+      }
+      #parrafo1, #parrafo2, #parrafo3, #parrafo4{
+        left: 0;
+        width: 80%;
+      }
+      .flecha{
+        display: none;
+      }
+      iframe{
+        width: 100%;
+        height: fit-content;
+      }
+    }
   </style>
   <body>
     <div id="fondo"></div>

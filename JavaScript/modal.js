@@ -4,11 +4,19 @@ let modal = document.getElementById('modal'),
     closeModal = document.getElementById('close-modal');
 
 openModal.addEventListener('click', ()=>{
-
-    modal.style.left = '0';
+    if(window.innerWidth < 700){
+        modal.style.left = '6%'
+    }else{
+        modal.style.left = '0';
+    }
+    
 })
 
 closeModal.addEventListener('click', ()=>{
-
-    modal.style.left = '-35%';
+    if(window.innerWidth < 700){
+        modal.style.left = '-90%'
+    }else{
+        modal.style.left = '-35%';
+    }
+    
 })

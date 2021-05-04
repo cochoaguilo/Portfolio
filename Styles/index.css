@@ -82,3 +82,20 @@ main{
     font-size: 150px;
   }
 }
+@media (max-width: 700px){
+  main{
+    flex-direction: column;
+  }
+  .section{
+    border-right: none;
+    width: 80%;
+    height: 30vh;
+    padding: 30px;
+    
+  }
+  .iconos:hover{
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

@@ -65,18 +65,18 @@
   
 }
 
-/*
-@media (min-width: 1500px){
-    .modal-iconos{
-        font-size: 28px;
-    }
+
+@media (max-width: 700px){
+   .modal{
+       width: 80vw;
+      left: -90%;
+      height: 70vh;
+   }
+   .modal-iconos{
+       font-size: 6vw;
+   }
+   #close-modal{
+       font-size: 7vw;
+   }
 }
 
-@media(max-width: 1200px){
-    .modal-content h3{
-        margin: 0;
-    }
-    .modal-iconos{
-        font-size: 16px;
-    }
-}

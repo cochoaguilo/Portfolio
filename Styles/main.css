@@ -167,3 +167,15 @@ nav .fa{
         top: 2px;
     }
 }
+@media (max-width: 700px){
+    .titulo-principal{
+        top: 40px;
+    }
+    nav{
+        margin-right: 10%;
+        gap: 12vw;
+    }
+    #fondo{
+        height: 110%;
+    }
+}
